@@ -20,5 +20,9 @@ npm run build
 npm run lint
 ```
 
+# Setup Firestore for real time chat.
+```
+log in to your google dev and set up ur firestore db. firestore db is not commited on this repo.
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
