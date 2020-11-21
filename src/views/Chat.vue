@@ -3,7 +3,7 @@
     <h2>Ninja Chat</h2>
     <div class="card">
       <div class="card-content">
-        <ul class="messages">
+        <ul class="messages" v-chat-scroll="{ always: true, smooth: true }">
           <li v-for="msg in messages" :key="msg.id">
             <span class="teal-text">{{ msg.name }}</span>
             <span class="grey-text text-darken-3">{{ msg.content }}</span>
@@ -70,5 +70,22 @@ export default {
 
 li span:first-child {
   margin-right: 5px;
+}
+
+.messages {
+  max-height: 300px;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #ddd;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #aaa;
+  }
 }
 </style>
