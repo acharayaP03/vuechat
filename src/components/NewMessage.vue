@@ -19,6 +19,9 @@ export default {
       feedback: null,
     };
   },
+  created(){
+
+  },
   methods: {
     addMessage() {
       if (this.newMessage) {
